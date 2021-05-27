@@ -10,7 +10,7 @@
   align-items: center;
 }
 .search-bar{
-  width:50%;
+  width:40%;
   
   border:none;
   padding:10px;
@@ -20,6 +20,9 @@
   border:none;
   padding:10px 20px;
   color:white;
+  margin:10px;
+  border-radius: 5px;
+  font-size:18px;
 }
 .recipes{
   display: flex;

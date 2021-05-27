@@ -38,7 +38,7 @@ const App=()=>{
   
   return( 
   <div className='App'>
-  <div className="headtitle">Search your Recipes</div>
+  <div className="headtitle">What Should I Cook Today🍜🍪</div>
   <form onSubmit={getSearch} className="search-form" >
     <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
     <button className="search-button" type="submit" >Search</button>
@@ -46,9 +46,9 @@ const App=()=>{
   </form>
   
   <div className="recipes">{
-    recipes.map(recipe=>(
+    recipes.map((recipe,index)=>(
       <Recipe 
-      key={recipe.recipe.calories}
+      key={index}
       title={recipe.recipe.label} 
       image={recipe.recipe.image} 
       ingredients={recipe.recipe.ingredients}/>
